@@ -1,0 +1,685 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Bodoni Moda', serif;
+}
+/* FONDO GENERAL */
+body{
+padding-top: 0px; /* ajusta si el menú es más alto o bajo */
+cursor: crosshair;
+
+background:linear-gradient(
+135deg,
+#161515 0%,
+#181818 20%,
+#4b4848 40%,
+#b1acac 60%,
+#d4c7c7 80%,
+#9a9a9a 100%
+);
+color:#1a2bff; /* azul rey */
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav{
+    position: relative;
+}
+header.scrolled nav{
+    padding: 15px 40px;
+}
+
+
+.hidden{
+opacity:0;
+transform: translateY(40px);
+transition: all 0.8s ease;
+}
+
+.show{
+opacity:1;
+transform: translateY(0);
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding: 20px 40px;
+
+background:linear-gradient(
+to bottom,
+#000000,
+#000000
+);
+
+border-bottom:2px solid #FFD700;
+
+}
+
+/* LOGO */
+.logo{
+    font-size:28px;
+font-weight:bold;
+
+text-decoration:none;
+
+background:linear-gradient(
+90deg,
+#8a6a00,
+#d4af37,
+#fff3a0,
+#d4af37,
+#8a6a00
+);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+color:transparent;
+
+font-weight:600;
+
+transition:0.3s;
+
+}
+/* LINKS */
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+background:linear-gradient(
+90deg,
+#8a6a00,
+#d4af37,
+#fff3a0,
+#d4af37,
+#8a6a00
+);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+color:transparent;
+
+font-weight:600;
+
+transition:0.3s;
+
+}
+nav a:hover{
+
+text-shadow:
+0 0 5px #d4af37,
+0 0 10px #d4af37,
+0 0 20px #ffd700;
+
+}
+nav a:hover{
+
+color:#e6b517;
+
+}
+
+/* HERO */
+
+.hero{
+height: 90vh;
+
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+background:linear-gradient(
+135deg,
+
+#0000 100%
+);
+
+
+}
+
+.hero h1{
+    font-size:70px;
+    margin-top:25px;
+    margin-bottom:0;
+
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    /* GRADIENTE EN EL TEXTO */
+    background: linear-gradient(
+        135deg,
+        #9a9a9a 0%,
+        #d4c7c7 20%,
+        #b1acac 40%,
+        #4b4848 60%,
+        #181818 80%,
+        #161515 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip:text;
+background-clip:text;
+
+-webkit-text-fill-color:transparent;
+font-size:70px;
+font-size:clamp(32px, 6vw, 70px);
+}
+/* TEXTO */
+
+.hero p{
+
+font-size:30px;
+margin-top:10px;
+
+color: #caae10;
+}
+
+/* BOTON */
+
+.btn{
+
+margin-top:25px;
+
+background:linear-gradient(
+135deg,
+#FFD700,
+#FFD700
+);
+
+color:black;
+
+padding:12px 30px;
+
+border-radius:5px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+background:linear-gradient(
+135deg,
+#ffd11a,
+#4a5cff
+);
+
+color:rgb(19, 18, 18);
+
+}
+
+/* PRODUCTOS */
+
+.productos{
+
+padding:80px;
+text-align:center;
+background-color: #000000;
+
+}
+
+/* TITULOS */
+
+.productos h2{
+
+color:#d4af37;
+font-size:35px;
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:40px;
+
+margin-top:40px;
+
+}
+
+/* TARJETAS */
+
+.card{
+
+background:linear-gradient(
+145deg,
+#000000,
+#000000
+);
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+
+transition:0.3s;
+
+}
+
+/* HOVER */
+
+.card:hover{
+
+transform:scale(1.05);
+border:1px solid #bfad0c;
+
+}
+
+/* IMAGEN */
+
+.card img{
+
+width:220px;
+border-radius:10px;
+
+}
+
+/* TEXTO CARD */
+
+.card h3{
+
+color:#d4af37;
+margin-top:10px;
+
+}
+
+.card p{
+
+color:#1604b9;
+
+}
+
+/* SECCION MISION */
+
+.mission{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:60px;
+
+padding:80px;
+background-color: #000000;
+
+}
+
+.mission h2{
+
+color: #caae10;
+
+}
+
+.mission p{
+
+color:#bba604;
+
+}
+
+/* CATALOGO */
+
+.catalogo{
+
+padding:80px;
+text-align:center;
+
+}
+
+.catalogo h1{
+
+color:#d4af37;
+font-size:40px;
+margin-bottom:50px;
+
+}
+
+.grid-productos{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:40px;
+
+padding:0 100px;
+
+}
+
+.producto{
+
+background:linear-gradient(
+145deg,
+#0c0c0c,
+#000000
+);
+
+padding:20px;
+
+border-radius:12px;
+
+transition:0.3s;
+
+}
+
+.producto:hover{
+
+transform:scale(1.05);
+border:1px solid #b7a805;
+
+}
+
+.producto img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+.producto h3{
+
+color:#d4af37;
+margin-top:10px;
+
+}
+
+.producto p{
+
+color:#1a2bff;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#000000;
+padding:40px;
+text-align:center;
+
+}
+
+.redes{
+
+margin:20px;
+
+}
+
+.redes a{
+
+color:#d4af37;
+font-size:28px;
+
+margin:15px;
+
+transition:0.3s;
+
+}
+
+.redes a:hover{
+
+color:#1a2bff;
+
+}
+@media(max-width:768px){
+
+nav{
+flex-direction: column;
+gap:10px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.cards{
+flex-direction: column;
+align-items:center;
+}
+}
+
+.mission{
+flex-direction: column;
+text-align:center;
+}
+
+
+
+@keyframes brillo{
+
+0%{background-position:0%;}
+100%{background-position:200%;}
+
+}
+
+/* ===================== EFECTOS ADICIONALES SIN CAMBIAR COLORES ===================== */
+
+/* ANIMACION DE TITULO HERO */
+.hero h1{
+    animation: glowText 3s infinite alternate;
+}
+
+/* EFECTO SHINE BOTONES */
+.btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.15);
+    transform: skewX(-20deg);
+    transition: all 0.5s;
+}
+
+.btn:hover::after{
+    left:200%;
+}
+
+/* ANIMACION SHINE TARJETAS */
+.card::before, .producto::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+    background:linear-gradient(120deg, rgba(255,215,0,0.15), rgba(255,255,255,0.05), rgba(255,215,0,0.15));
+    opacity:0;
+    transition:0.5s;
+}
+
+.card:hover::before, .producto:hover::before{
+    opacity:1;
+    animation: shine 2s linear infinite;
+}
+
+/* EFECTO SHINE ANIMADO */
+
+
+/* EFECTO SUBRAYADO LINKS */
+nav a::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:2px;
+    background:#ffd700;
+    transition:0.5s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* ICONOS DE REDES */
+.redes a{
+    transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.redes a:hover{
+    transform: scale(1.2) rotate(-5deg);
+    text-shadow:
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 15px #e6b517;
+}
+
+/* EFECTO SUAVE DE IMAGENES */
+.card img, .producto img{
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.card img:hover, .producto img:hover{
+    transform: scale(1.08) rotate(-1deg);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+
+/* SHINE EN BOTONES */
+.btn::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.15);
+    transform: skewX(-20deg);
+    transition: all 0.5s;
+    pointer-events: none; /* <---- evita bloquear el botón */
+}
+
+/* SHINE EN CARDS Y PRODUCTOS */
+.card::before, .producto::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+    background:linear-gradient(120deg, rgba(255,215,0,0.15), rgba(255,255,255,0.05), rgba(255,215,0,0.15));
+    opacity:0;
+    transition:0.5s;
+    pointer-events: none; /* <---- evita bloquear la card */
+}
+/* ================= MEJORAS MOVIL SIN CAMBIAR DISEÑO ================= */
+
+@media (max-width:768px){
+
+/* NAVBAR solo acomoda */
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* HERO solo reduce texto */
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+/* CARDS se apilan */
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+/* IMAGENES RESPONSIVE */
+.card img{
+width:100%;
+max-width:300px;
+}
+
+/* GRID DEL CATALOGO (ARREGLO PRINCIPAL) */
+
+.grid-productos{
+
+grid-template-columns:repeat(2,1fr);
+
+padding:0 20px;
+
+}
+
+/* EN CELULARES MUY PEQUEÑOS */
+
+@media (max-width:480px){
+
+.grid-productos{
+grid-template-columns:1fr;
+}
+
+}
+
+}
+/* ===== ARREGLO TITULOS EN CELULAR ===== */
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:42px;
+line-height:1.2;
+padding:0 10px;
+}
+
+.catalogo h1{
+font-size:30px;
+padding:0 10px;
+}
+
+.productos h2{
+font-size:28px;
+padding:0 10px;
+}
+
+.grid-productos{
+padding:0 20px;
+}
+
+}

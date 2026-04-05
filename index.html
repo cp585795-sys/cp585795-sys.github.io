@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EleverOne</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+<canvas></canvas>
+
+<header>
+<nav>
+<h2 class="logo">EleverOne</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="catalogo.html">Catalogo</a></li>
+<li><a href="camisetas.html">Camisetas</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>
+<span>IMAGEN</span><br>
+<span>ELEGANCIA</span><br>
+<span>EXCLUSIVIDAD</span>
+</h1>
+
+<p>Aspirar a soñar en GRANDE</p>
+
+<a href="catalogo.html" class="btn">SHOP NOW</a>
+
+</section>
+
+
+<section class="productos">
+
+<h2>NUEVAS LLEGADAS</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="Imagenes/camisa1.png">
+<h3>Ropa Unisex</h3>
+<p>$120.000</p>
+</div>
+
+<div class="card">
+<img src="Imagenes/camisa2.png">
+<h3>Ropa Unisex</h3>
+<p>$115.000</p>
+</div>
+
+<div class="card">
+<img src="Imagenes/camisa3.jpg">
+<h3>Ropa Unisex</h3>
+<p>$130.000</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="mission">
+
+<div class="text">
+<h2>PROPOSITO DE LA MARCA</h2>
+<p>Elevar la imagen del cliente  con elegancia y exclusividad</p>
+<p>Aspirar a soñar en clase</p>
+</div>
+
+<img src="Imagenes/camisa4.jpg">
+
+</section>
+
+
+<footer>
+
+<p>© 2026 EleverOne</p>
+
+</footer>
+<script>
+window.addEventListener("scroll", function(){
+  const header = document.querySelector("header");
+  if(header){
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  }
+});
+</script>
+
+</body>
+</html>
